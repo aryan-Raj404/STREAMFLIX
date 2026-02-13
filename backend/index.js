@@ -17,6 +17,6 @@ app.use(cors({origin : "http://localhost:5173", credentials : true})); // Allow 
 
 app.use("/api/v1/user", userRoute);
 
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT || 8080,()=>{
     console.log(`server listening on port ${process.env.PORT}`);
 })
