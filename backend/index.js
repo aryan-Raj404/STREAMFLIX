@@ -13,7 +13,7 @@ databaseConnection();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
-app.use(cors({origin : "http://localhost:5173", credentials : true})); // Allow credentials for cookies   
+app.use(cors({origin : "https://netmirror-fqzj.onrender.com", credentials : true})); // Allow credentials for cookies   
 
 app.use("/api/v1/user", userRoute);
 
